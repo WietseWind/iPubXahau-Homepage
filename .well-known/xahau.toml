@@ -1,0 +1,50 @@
+[METADATA]
+modified = 2023-10-13T12:08:00.000Z
+
+[ORGANIZATION]
+name="XRPL Labs (iPublications B.V.)"
+website="https://xrpl-labs.com"
+twitter="@XRPLLabs"
+
+[[UNLS]]
+provider = "Xahau Launch Alliance"
+unl = "https://vl.xahau.org"
+
+[[PRINCIPALS]]
+name = "Wietse Wind"
+email = "w@xrpl-labs.com"
+twitter = "@WietseWind"
+
+[[VALIDATORS]]
+public_key = "nHB45nBNgjKMssrRqaNVr2tpCq3t55J5APRRDD6ov1U41JfVFjr6"
+attestation = "38F4D32514F2C3D967536660113D4F58D24486BB80ABBEB764B5BB928A7B6E755CF0A1333524B9711AA2277F856A0381DE48DEFA3ABE4381B2828ED1EC46C604"
+network = "main"
+owner_country = "NL"
+server_country = "NL"
+unl = ["https://vl.xahau.org"]
+
+[[VALIDATORS]]
+public_key = "nHUhc1jmBqJ2n7hpUHwHxoWTx5U6p5ihrTXCRJHZbyh6imsoJC52"
+attestation = "CD1E2687BA5E44BDE36466B51AF860B5AFADE7B9771E76954EB940334BAE5CB58334DB39FB0A40B3E600BD99E803EBA97F376C67AD68DB7969216C73E554DA09"
+network = "main"
+owner_country = "NL"
+server_country = "NL"
+unl = ["https://vl.xahau.org"]
+
+[[ACCOUNTS]]
+address = "rD74dUPRFNfgnY2NzrxxYRXN4BrfGSN6Mv"
+network = "main"
+
+[[SERVERS]]
+ws = "wss://xahau.network"
+rpc = "https://xahau.network"
+network = "main"
+desc = "Xahau public infra"
+
+[[SERVERS]]
+ws = "wss://xahau-test.net"
+rpc = "https://xahau-test.net"
+network = "test"
+desc = "Xahau public TEST infra"
+
+
