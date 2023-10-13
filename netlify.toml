@@ -1,0 +1,10 @@
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+  for = "/.well-known/xahau.toml"
+    [headers.values]
+    Content-Type = "text/plain"
+    Access-Control-Allow-Origin = "*"
+
