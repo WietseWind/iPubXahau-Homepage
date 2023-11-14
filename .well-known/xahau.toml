@@ -21,6 +21,9 @@ attestation = "38F4D32514F2C3D967536660113D4F58D24486BB80ABBEB764B5BB928A7B6E755
 network = "main"
 owner_country = "NL"
 server_country = "NL"
+server_location = "Private datacenter (Utrecht area, NL)"
+server_cloud = false
+network_asn = 16089
 unl = ["https://vl.xahau.org"]
 
 [[VALIDATORS]]
