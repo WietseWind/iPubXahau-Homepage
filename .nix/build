@@ -14,3 +14,12 @@ $(cat /app/.nix/nginx.patch | tr -d '\\')
 w
 q
 EOF
+
+# And another one for the assets-one
+ed -s /assets/nginx.conf << EOF
+/^[[:space:]]*location[[:space:]]*\/[[:space:]]*{/-1i
+$(cat /app/.nix/nginx.patch | tr -d '\\')
+.
+w
+q
+EOF
