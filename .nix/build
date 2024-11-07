@@ -1,21 +1,5 @@
 apt install ed
 
-conf=$(find /nix/store/*-user-environment/conf/nginx.conf)
-
-echo "Patching nginx conf: $conf"
-
-sed -i.bak '/^[[:space:]]*#/d' $conf
-
-# Use ed for clean insertion without escape issues
-ed -s $conf << EOF
-/^[[:space:]]*location[[:space:]]*\/[[:space:]]*{/-1i
-$(cat /app/.nix/nginx.patch | tr -d '\\')
-.
-w
-q
-EOF
-
-# And another one for the assets-one
 ed -s /assets/nginx.conf << EOF
 /^[[:space:]]*location[[:space:]]*\/[[:space:]]*{/-1i
 $(cat /app/.nix/nginx.patch | tr -d '\\')
