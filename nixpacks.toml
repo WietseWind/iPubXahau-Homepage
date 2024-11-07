@@ -1,0 +1,2 @@
+[phases.build]
+cmds = ["mkdir -p /app/nginx/conf.d", "cp custom-headers.conf /app/nginx/conf.d/"]
